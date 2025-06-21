@@ -5,7 +5,7 @@ import { TeamSection } from "./team-section";
 import { VisionSection } from "./vision-section";
 
 export const metadata: Metadata = {
-  title: "About| Catfin",
+  title: "About | Catfin",
   description:
     "Catfin as a brand owns multiple companies for the Management Systems Covering Quality Management System and Environmental Management System for which patents have been granted and applied for.",
 };
