@@ -14,13 +14,15 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <Image
-              src="https://www.catfin.in/logos/catfin.png"
-              alt="Catfin Logo"
-              className="h-10 w-auto"
-              height={40}
-              width={160}
-            />
+            <Link href="/home">
+              <Image
+                src="https://www.catfin.in/logos/catfin.png"
+                alt="Catfin Logo"
+                className="h-10 w-auto"
+                height={40}
+                width={160}
+              />
+            </Link>
           </div>
 
           {/* Navigation Links */}
@@ -113,9 +115,33 @@ const Navbar = () => {
             <button className="bg-red-500 hover:bg-red-600 text-white px-6 py-2 rounded-full font-medium transition-colors">
               Partner Login
             </button> */}
-            <Button variant="default">Apply Now</Button>
-            <Button variant="default">Partner Login</Button>
-            <Button variant="default">Join Us</Button>
+            <Button
+              variant="default"
+              onClick={() => {
+                window.open(
+                  "https://app.catfin.in/#/apply-loan/mobile",
+                  "_blank"
+                );
+              }}
+            >
+              Apply Now
+            </Button>
+            <Button
+              variant="default"
+              onClick={() => {
+                window.open("https://app.catfin.in/#/login", "_blank");
+              }}
+            >
+              Partner Login
+            </Button>
+            <Button
+              variant="default"
+              onClick={() => {
+                window.open("https://app.catfin.in/#/login", "_blank");
+              }}
+            >
+              Join Us
+            </Button>
           </div>
         </div>
       </div>

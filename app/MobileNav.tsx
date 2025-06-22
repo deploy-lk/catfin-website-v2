@@ -15,18 +15,28 @@ const MobileNavbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <Image
-              src="https://www.catfin.in/logos/catfin.png"
-              alt="Catfin Logo"
-              className="h-10 w-auto"
-              height={40}
-              width={160}
-            />
+            <Link href="/home">
+              <Image
+                src="https://www.catfin.in/logos/catfin.png"
+                alt="Catfin Logo"
+                className="h-10 w-auto"
+                height={40}
+                width={160}
+              />
+            </Link>
           </div>
 
           {/* Right side - Apply Now Button and Menu */}
           <div className="flex items-center space-x-3">
-            <button className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-full font-medium transition-colors text-sm">
+            <button
+              onClick={() => {
+                window.open(
+                  "https://app.catfin.in/#/apply-loan/mobile",
+                  "_blank"
+                );
+              }}
+              className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-full font-medium transition-colors text-sm"
+            >
               Apply Now
             </button>
 
@@ -149,19 +159,31 @@ const MobileNavbar = () => {
                   <div className="border-t border-gray-200 p-6 space-y-3">
                     <button
                       className="w-full bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded-full font-medium transition-colors"
-                      onClick={() => setIsOpen(false)}
+                      onClick={() => {
+                        setIsOpen(false);
+                        window.open(
+                          "https://app.catfin.in/#/apply-loan/mobile",
+                          "_blank"
+                        );
+                      }}
                     >
                       Apply Now
                     </button>
                     <button
                       className="w-full bg-gray-100 hover:bg-gray-200 text-gray-700 px-6 py-3 rounded-full font-medium transition-colors"
-                      onClick={() => setIsOpen(false)}
+                      onClick={() => {
+                        setIsOpen(false);
+                        window.open("https://app.catfin.in/#/login", "_blank");
+                      }}
                     >
                       Partner Login
                     </button>
                     <button
                       className="w-full bg-gray-100 hover:bg-gray-200 text-gray-700 px-6 py-3 rounded-full font-medium transition-colors"
-                      onClick={() => setIsOpen(false)}
+                      onClick={() => {
+                        setIsOpen(false);
+                        window.open("https://app.catfin.in/#/login", "_blank");
+                      }}
                     >
                       Join Us
                     </button>

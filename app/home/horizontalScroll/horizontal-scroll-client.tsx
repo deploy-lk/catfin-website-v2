@@ -37,7 +37,6 @@ const HorizontalScrollSection = () => {
   if (isMobile) {
     return (
       <motion.div className="bg-gradient-to-b from-red-50">
-
         <div className="text-center py-8 px-4">
           <h1 className="text-4xl font-bold text-gray-800 mb-4">We Offer</h1>
           <div className="w-24 h-1 bg-red-500 mx-auto"></div>
@@ -53,7 +52,6 @@ const HorizontalScrollSection = () => {
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
             >
-
               <div className="absolute top-6 right-6 opacity-10">
                 <div className="w-20 h-20 bg-gradient-to-br from-red-400 to-red-600 rounded-full blur-xl" />
               </div>
@@ -96,6 +94,12 @@ const HorizontalScrollSection = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 + 0.5 }}
+                onClick={() => {
+                  window.open(
+                    "https://app.catfin.in/#/apply-loan/mobile",
+                    "_blank"
+                  );
+                }}
               >
                 Apply Now
               </motion.button>
@@ -106,10 +110,8 @@ const HorizontalScrollSection = () => {
     );
   }
 
-
   return (
     <div className="bg-gradient-to-br from-gray-50 to-white relative">
-
       <motion.div
         ref={headerRef}
         className="sticky top-0 z-20 py-6 bg-gradient-to-br from-gray-50 to-white"
@@ -143,7 +145,6 @@ const HorizontalScrollSection = () => {
                 }}
                 transition={{ duration: 0.5 }}
               >
-
                 <div className="absolute top-6 right-6 opacity-10">
                   <div className="w-24 h-24 bg-gradient-to-br from-red-400 to-red-600 rounded-full blur-xl" />
                 </div>
@@ -182,6 +183,12 @@ const HorizontalScrollSection = () => {
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.1 + 0.6 }}
+                  onClick={() => {
+                    window.open(
+                      "https://app.catfin.in/#/apply-loan/mobile",
+                      "_blank"
+                    );
+                  }}
                 >
                   Apply Now
                 </motion.button>
