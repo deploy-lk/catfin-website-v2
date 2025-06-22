@@ -23,9 +23,9 @@ export const CompanyInfoClient = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8, delay: 0.2 }}
-        className="max-w-4xl mx-auto space-y-8"
+        className="max-w-6xl mx-auto space-y-8"
       >
-        <article className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 relative overflow-hidden">
+        <article className="bg-white rounded-2xl p-12 shadow-lg border border-gray-200 relative overflow-hidden">
           <div className="relative z-10 space-y-6 text-gray-600 text-lg leading-relaxed">
             <p>
               <span className="text-red-600 font-bold">Catfin</span> is a tech

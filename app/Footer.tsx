@@ -131,6 +131,13 @@ const Footer = () => {
                 >
                   sales@catfin.in
                 </a>
+                <Mail className="w-4 h-4 text-red-500 group-hover:scale-110 transition-transform duration-300" />
+                <a
+                  href="mailto:support@catfin.in"
+                  className="text-sm text-gray-600 hover:text-red-600 transition-colors duration-300"
+                >
+                  support@catfin.in
+                </a>
               </div>
             </div>
           </div>
