@@ -44,13 +44,13 @@ export const HeroContent = () => {
           Learn More
         </Link> */}
         <Link
-          href="/apply"
+          href="https://app.catfin.in/#/apply-loan/mobile"
           className="bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-8 rounded-lg transition-all transform hover:scale-105 active:scale-95 shadow-lg text-center"
         >
           Apply Now
         </Link>
         <Link
-          href="/learn-more"
+          href="/about"
           className="border-2 border-red-600 text-red-600 hover:bg-red-100 font-semibold py-3 px-8 rounded-lg transition-all text-center"
         >
           Learn More
