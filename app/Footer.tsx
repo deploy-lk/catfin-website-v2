@@ -1,6 +1,13 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { Mail, Phone, MapPin, Facebook, Instagram } from "lucide-react";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Facebook,
+  Instagram,
+  Linkedin,
+} from "lucide-react";
 import Image from "next/image";
 
 const Footer = () => {
@@ -253,7 +260,7 @@ const Footer = () => {
                 </a>
 
                 <a
-                  href="#"
+                  href="https://www.facebook.com/catfin.india/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-full transition-all duration-300 transform hover:scale-110 hover:rotate-3 shadow-lg hover:shadow-xl"
@@ -263,13 +270,22 @@ const Footer = () => {
                 </a>
 
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/company/catfin-in"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-pink-500 hover:bg-pink-600 text-white p-3 rounded-full transition-all duration-300 transform hover:scale-110 hover:rotate-3 shadow-lg hover:shadow-xl"
                   aria-label="Follow us on Instagram"
                 >
                   <Instagram className="w-5 h-5" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/catfin-in"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-blue-700 hover:bg-blue-800 text-white p-3 rounded-full transition-all duration-300 transform hover:scale-110 hover:rotate-3 shadow-lg hover:shadow-xl"
+                  aria-label="Follow us on LinkedIn"
+                >
+                  <Linkedin className="w-5 h-5" />
                 </a>
               </div>
             </div>
