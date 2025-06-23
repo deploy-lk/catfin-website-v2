@@ -4,6 +4,14 @@ import Link from "next/link";
 export const HeroContent = () => {
   return (
     <div className="space-y-6">
+      <Link
+        href="https://app.catfin.in/#/apply-loan/mobile"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-white"
+      >
+        Apply
+      </Link>
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
