@@ -5,14 +5,6 @@ import Link from "next/link";
 export const HeroContent = () => {
   return (
     <div className="space-y-6">
-      <Link
-        href="https://app.catfin.in/#/apply-loan/mobile"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-white"
-      >
-        Apply
-      </Link>
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -38,7 +30,7 @@ export const HeroContent = () => {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.2 }}
-        className="flex flex-col sm:flex-row gap-4 pt-4"
+        className="flex flex-col sm:flex-row gap-4 pt-4 relative z-10"
       >
         {/* <Link
           href="/apply"
