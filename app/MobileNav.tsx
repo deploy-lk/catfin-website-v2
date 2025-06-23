@@ -51,10 +51,12 @@ const MobileNavbar = () => {
                 <div className="bg-white flex flex-col h-full">
                   {/* Header */}
                   <div className="flex items-center justify-between p-6 border-b border-gray-200">
-                    <img
+                    <Image
                       src="https://www.catfin.in/logos/catfin.png"
                       alt="Catfin Logo"
                       className="h-8 w-auto"
+                      height={32}
+                      width={128}
                     />
                     {/* <button 
                       onClick={() => setIsOpen(false)}
@@ -98,42 +100,66 @@ const MobileNavbar = () => {
 
                         {isProductsOpen && (
                           <div className="ml-4 space-y-1">
-                            <a
-                              href="#"
+                            <Link
+                              href="/products/personal-loan"
                               className="block px-4 py-2 text-sm text-gray-600 hover:text-red-500 hover:bg-red-50 rounded-lg transition-colors"
                             >
                               Personal Loan
-                            </a>
-                            <a
-                              href="#"
+                            </Link>
+                            <Link
+                              href="/products/business-loan"
                               className="block px-4 py-2 text-sm text-gray-600 hover:text-red-500 hover:bg-red-50 rounded-lg transition-colors"
                             >
                               Business Loan
-                            </a>
-                            <a
-                              href="#"
+                            </Link>
+                            <Link
+                              href="/products/mortgage-loan"
                               className="block px-4 py-2 text-sm text-gray-600 hover:text-red-500 hover:bg-red-50 rounded-lg transition-colors"
                             >
                               Home Loan
-                            </a>
-                            <a
-                              href="#"
+                            </Link>
+                            <Link
+                              href="/products/auto-loan"
                               className="block px-4 py-2 text-sm text-gray-600 hover:text-red-500 hover:bg-red-50 rounded-lg transition-colors"
                             >
                               Used Car Loan
-                            </a>
-                            <a
-                              href="#"
+                            </Link>
+                            <Link
+                              href="/products/mutual-funds"
                               className="block px-4 py-2 text-sm text-gray-600 hover:text-red-500 hover:bg-red-50 rounded-lg transition-colors"
                             >
                               Mutual Funds
-                            </a>
-                            <a
-                              href="#"
+                            </Link>
+                            <Link
+                              href="/products/loan-against-shares"
                               className="block px-4 py-2 text-sm text-gray-600 hover:text-red-500 hover:bg-red-50 rounded-lg transition-colors"
                             >
                               Loan against shares
-                            </a>
+                            </Link>
+                            <Link
+                              href="/products/fixed-deposit"
+                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-red-50 hover:text-red-500"
+                            >
+                              Fixed deposit
+                            </Link>
+                            <Link
+                              href="/products/insurance-sip"
+                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-red-50 hover:text-red-500"
+                            >
+                              Insurance & SIP&apos;s
+                            </Link>
+                            <Link
+                              href="/products/invoice-discounting"
+                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-red-50 hover:text-red-500"
+                            >
+                              Invoice Discounting
+                            </Link>
+                            <Link
+                              href="/home"
+                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-red-50 hover:text-red-500"
+                            >
+                              Working Capital
+                            </Link>
                           </div>
                         )}
                       </div>
