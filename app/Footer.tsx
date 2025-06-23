@@ -8,16 +8,16 @@ const Footer = () => {
 
   // Products with their respective links
   const productsList = [
-    { name: "Personal Loan", link: "/personal-loan" },
-    { name: "Business Loan", link: "/business-loan" },
-    { name: "Home Loan", link: "/home-loan" },
-    { name: "Used Car Loan", link: "/car-loan" },
-    { name: "Mutual Funds", link: "/mutual-funds" },
-    { name: "Loan against shares", link: "/loan-against-shares" },
-    { name: "Fixed Deposit", link: "/fixed-deposit" },
-    { name: "Insurance & SIP'S", link: "/insurance-sip" },
-    { name: "Invoice Discounting", link: "/invoice-discounting" },
-    { name: "Working Capital", link: "/working-capital" },
+    { name: "Personal Loan", link: "/products/personal-loan" },
+    { name: "Business Loan", link: "/products/business-loan" },
+    { name: "Home Loan", link: "/products/mortgage-loan" },
+    { name: "Used Car Loan", link: "/products/auto-loan" },
+    { name: "Mutual Funds", link: "/products/mutual-funds" },
+    { name: "Loan against shares", link: "/products/loan-against-shares" },
+    { name: "Fixed Deposit", link: "/products/fixed-deposit" },
+    { name: "Insurance & SIP'S", link: "/products/insurance-sip" },
+    { name: "Invoice Discounting", link: "/products/invoice-discounting" },
+    { name: "Working Capital", link: "/home" },
   ];
 
   // Quick links with their respective URLs
@@ -26,7 +26,7 @@ const Footer = () => {
     { name: "Grievance Redressal", link: "/grievance-redressal" },
     { name: "Terms & Conditions", link: "/terms-conditions" },
     { name: "Privacy Policy", link: "/privacy-policy" },
-    { name: "RBI Sachet", link: "/rbi-sachet" },
+    { name: "RBI Sachet", link: "https://sachet.rbi.org.in/" },
     { name: "Lender Grievances Details", link: "/lender-grievances" },
     { name: "Lenders Consent", link: "/lenders-consent" },
   ];
