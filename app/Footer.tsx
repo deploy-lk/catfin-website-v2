@@ -90,7 +90,7 @@ const Footer = () => {
               <Image
                 src="https://www.catfin.in/logos/catfin.png"
                 alt="Catfin - Financial Services Platform"
-                className="h-16 w-auto hover:scale-105 transition-transform duration-300"
+                className="hover:scale-105 transition-transform duration-300"
                 loading="lazy"
                 height={64}
                 width={200}

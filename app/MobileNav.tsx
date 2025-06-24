@@ -19,9 +19,10 @@ const MobileNavbar = () => {
               <Image
                 src="https://www.catfin.in/logos/catfin.png"
                 alt="Catfin Logo"
-                className="h-10 w-auto"
+                // className="h-10 w-auto"
                 height={40}
                 width={160}
+                priority
               />
             </Link>
           </div>
@@ -54,9 +55,10 @@ const MobileNavbar = () => {
                     <Image
                       src="https://www.catfin.in/logos/catfin.png"
                       alt="Catfin Logo"
-                      className="h-8 w-auto"
+                      // className="h-8 w-auto"
                       height={32}
                       width={128}
+                      priority
                     />
                     {/* <button 
                       onClick={() => setIsOpen(false)}
@@ -164,20 +166,21 @@ const MobileNavbar = () => {
                         )}
                       </div>
 
-                      <a
-                        href="#"
+                      <Link
+                        href="/lender-search"
                         className="block px-4 py-3 text-gray-700 hover:text-red-500 hover:bg-red-50 rounded-lg transition-colors font-medium"
                         onClick={() => setIsOpen(false)}
                       >
                         Lender Pincode search
-                      </a>
-                      <a
-                        href="#"
+                      </Link>
+                      <Link
+                        href="https://calculator.catfin.in/"
+                        target="_blank"
                         className="block px-4 py-3 text-gray-700 hover:text-red-500 hover:bg-red-50 rounded-lg transition-colors font-medium"
                         onClick={() => setIsOpen(false)}
                       >
                         EMI Calculator
-                      </a>
+                      </Link>
                     </div>
                   </div>
 
