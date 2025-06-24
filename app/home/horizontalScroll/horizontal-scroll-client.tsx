@@ -24,13 +24,26 @@ const HorizontalScrollSection = () => {
 
   const headerY = useTransform(scrollYProgress, [0, 0.85, 1], [0, 0, -120]);
 
+  // useEffect(() => {
+  //   if (!isMobile) {
+  //     const unsubscribe = scrollYProgress.onChange((progress) => {
+  //       const section = Math.floor(progress * 8);
+  //       setCurrentSection(Math.min(section, 6));
+  //     });
+  //     return unsubscribe;
+  //   }
+  // }, [scrollYProgress, isMobile]);
+
   useEffect(() => {
     if (!isMobile) {
-      const unsubscribe = scrollYProgress.onChange((progress) => {
+      const updateSection = (progress: number) => {
         const section = Math.floor(progress * 8);
         setCurrentSection(Math.min(section, 6));
-      });
-      return unsubscribe;
+      };
+  
+      const unsubscribe = scrollYProgress.on("change", updateSection);
+  
+      return () => unsubscribe();
     }
   }, [scrollYProgress, isMobile]);
 

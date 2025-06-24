@@ -37,9 +37,10 @@ const Navbar = () => {
               <Image
                 src="https://www.catfin.in/logos/catfin.png"
                 alt="Catfin Logo"
-                className="h-10 w-auto"
+                // className="h-10 w-auto"
                 height={40}
                 width={160}
+                priority
               />
             </Link>
           </div>
@@ -97,18 +98,19 @@ const Navbar = () => {
               )}
             </div>
 
-            <a
-              href="#"
+            <Link
+              href="/lender-search"
               className="text-gray-700 hover:text-red-500 px-3 py-2 text-sm font-medium transition-colors"
             >
               Lender Pincode search
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://calculator.catfin.in/"
+              target="_blank"
               className="text-gray-700 hover:text-red-500 px-3 py-2 text-sm font-medium transition-colors"
             >
               EMI Calculator
-            </a>
+            </Link>
           </div>
 
           {/* Action Buttons */}

@@ -40,9 +40,9 @@ const PartnersSection = () => {
               <Image
                 src={partner.image}
                 alt={partner.name}
-                className="h-12 object-contain mb-1"
+                className="object-contain mb-1"
                 height={48}
-                // width={...} // specify width if needed
+                width={undefined}
               />
             </motion.div>
           ))}
