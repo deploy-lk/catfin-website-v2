@@ -52,8 +52,9 @@ export const AboutHero = () => {
               <p>
                 We have our branches and associates based in{" "}
                 <span className="font-semibold text-red-600">
-                  MP, Maharashtra, Haryana, Kolkata, Uttarakhand, Uttar Pradesh,
-                  Jharkhand, Karnataka, West Bengal
+                  Madhya Pradesh, Maharashtra, Haryana, Uttarakhand, Uttar
+                  Pradesh, Bihar, Jharkhand, Karnataka, West Bengal, Kerala,
+                  Rajasthan, Chandigarh, Punjab,
                 </span>{" "}
                 and we put in all the efforts to economize registration costs
                 without compromising the quality.

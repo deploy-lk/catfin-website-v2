@@ -211,7 +211,7 @@ export default function LoanPageTemplate({
                 initial={{ opacity: 0, x: -10 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 1, duration: 0.4, ease: "easeOut" }}
-                className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm rounded-xl p-3 shadow-lg"
+                className="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm rounded-xl p-3 shadow-lg"
                 style={{ willChange: "transform" }}
               >
                 <div className="text-xs text-gray-600">Max Amount</div>
