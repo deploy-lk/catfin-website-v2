@@ -31,7 +31,7 @@ const Footer = () => {
   const quickLinksList = [
     { name: "Data Storage Policy", link: "/data-storage-policy" },
     { name: "Grievance Redressal", link: "/grievance-redressal" },
-    { name: "Terms & Conditions", link: "/terms-conditions" },
+    { name: "Terms & Conditions", link: "/terms-and-conditions" },
     { name: "Privacy Policy", link: "/privacy-policy" },
     { name: "RBI Sachet", link: "https://sachet.rbi.org.in/" },
     { name: "Lender Grievances Details", link: "/lender-grievances" },
@@ -88,7 +88,7 @@ const Footer = () => {
           <div className="lg:col-span-1 space-y-6">
             <div className="flex items-center mb-6">
               <Image
-                src="https://www.catfin.in/logos/catfin.png"
+                src="/catfin.png"
                 alt="Catfin - Financial Services Platform"
                 className="hover:scale-105 transition-transform duration-300"
                 loading="lazy"

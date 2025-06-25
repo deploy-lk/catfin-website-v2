@@ -35,7 +35,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link href="/home">
               <Image
-                src="https://www.catfin.in/logos/catfin.png"
+                src="/catfin.png"
                 alt="Catfin Logo"
                 // className="h-10 w-auto"
                 height={40}

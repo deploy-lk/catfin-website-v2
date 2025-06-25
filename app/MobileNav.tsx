@@ -17,7 +17,7 @@ const MobileNavbar = () => {
           <div className="flex items-center">
             <Link href="/home">
               <Image
-                src="https://www.catfin.in/logos/catfin.png"
+                src="/catfin.png"
                 alt="Catfin Logo"
                 // className="h-10 w-auto"
                 height={40}
@@ -53,7 +53,7 @@ const MobileNavbar = () => {
                   {/* Header */}
                   <div className="flex items-center justify-between p-6 border-b border-gray-200">
                     <Image
-                      src="https://www.catfin.in/logos/catfin.png"
+                      src="/catfin.png"
                       alt="Catfin Logo"
                       // className="h-8 w-auto"
                       height={32}
