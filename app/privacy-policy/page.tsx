@@ -87,9 +87,9 @@ const PrivacyPolicyPage = () => {
       icon: <XCircle className="w-6 h-6" />,
       title: "Opt-Out Procedures",
       content: [
-        "If you are no longer interested in sharing your PI, please e-mail your request at: <a href='mailto:support@catfin.in' className='text-red-500 font-semibold hover:text-red-600 underline'>support@catfin.in</a>.",
+        "If you are no longer interested in sharing your PI, please e-mail your request at: support@catfin.in .",
         "Please note that it may take about 72 business hours to process your request.",
-        "In case you do not want to be disturbed over telephonic calls, kindly fill up the details requested including the details of the telephone number(s) on which you do not wish to be contacted and submit the same at <a href='mailto:support@catfin.in' className='text-red-500 font-semibold hover:text-red-600 underline'>support@catfin.in</a> from your email address registered at Catfin.",
+        "In case you do not want to be disturbed over telephonic calls, kindly fill up the details requested including the details of the telephone number(s) on which you do not wish to be contacted and submit the same at support@catfin.in from your email address registered at Catfin.",
         "You may opt out of location-based services at any time by editing the setting of your browser.",
         "Cateye's Website subscribers may opt-out of receiving our promotional emails and terminate their newsletter subscriptions by following the instructions in the emails.",
         "Opting out in this manner will not end transmission of service-related e-mails/SMS, such as e-mail/SMS alerts.",
@@ -146,10 +146,10 @@ const PrivacyPolicyPage = () => {
       title: "Information Updates and Changes",
       content: [
         "If your PI provided to us when you had applied for a product on our Website changes, you may update it whenever you apply for a new product via our Website.",
-        "To review and update your PI and to ensure that the same is accurate while your application is in process, you may contact us at <a href='mailto:support@catfin.in' className='text-red-500 font-semibold hover:text-red-600 underline'>support@catfin.in</a>.",
+        "To review and update your PI and to ensure that the same is accurate while your application is in process, you may contact us at support@catfin.in",
         "You will not be able to update the information you have provided in an application after a decision has already been made on it; however, you may create and submit a new application with your updated information.",
         "We will retain your information for as long as your account is active or as needed to provide you services.",
-        "If you wish to cancel your account or request that we no longer use your information to provide you services, contact us at <a href='mailto:support@catfin.in' className='text-red-500 font-semibold hover:text-red-600 underline'>support@catfin.in</a>.",
+        "If you wish to cancel your account or request that we no longer use your information to provide you services, contact us at support@catfin.in.",
         "We will respond to your request within a reasonable timeframe.",
         "However, we will retain and use your information as necessary to comply with our legal obligations, resolve disputes, and to enforce our agreements.",
       ],
@@ -254,9 +254,9 @@ const PrivacyPolicyPage = () => {
       title: "User Responsibility for Login Credentials",
       content: [
         "You are responsible for maintaining the security of your login ID and Password and must not provide these credentials to any third party.",
-        "If you believe that they have been stolen or been made known to others, you must contact us immediately at <a href='mailto:support@catfin.in' className='text-red-500 font-semibold hover:text-red-600 underline'>support@catfin.in</a>.",
+        "If you believe that they have been stolen or been made known to others, you must contact us immediately at support@catfin.in.",
         "We are not responsible if someone else accesses your account through the login credential they have obtained from you or through a violation by you of this Privacy and Security Policy or the Cateye Terms of Use.",
-        "If you have any security related concern, please contact us at <a href='mailto:support@catfin.in' className='text-red-500 font-semibold hover:text-red-600 underline'>support@catfin.in</a>. We will work closely with you to ensure a rapid and personal response to your concerns.",
+        "If you have any security related concern, please contact us at support@catfin.in. We will work closely with you to ensure a rapid and personal response to your concerns.",
       ],
     },
   ];
