@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
+import { User } from "lucide-react";
 // import { Linkedin, Mail, Phone } from "lucide-react"
 import { teamData } from "./team-data";
 
@@ -59,14 +59,17 @@ export const TeamSection = () => {
                       className="relative"
                     >
                       <div className="w-24 h-24 rounded-2xl overflow-hidden shadow-lg ring-4 ring-red-100 group-hover:ring-red-200 transition-all duration-300">
-                        <Image
+                        {/* <Image
                           src={member.image || "/placeholder.svg"}
                           alt={`${member.name} - ${member.position}`}
                           width={96}
                           height={96}
                           className="w-full h-full object-cover"
                           priority={index < 4}
-                        />
+                        /> */}
+                        <div className="w-full h-full bg-gradient-to-br from-red-100 to-red-200 flex items-center justify-center">
+                          <User className="w-10 h-10 text-red-500" />
+                        </div>
                       </div>
                     </motion.div>
 
