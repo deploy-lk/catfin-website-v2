@@ -129,7 +129,7 @@ const Navbar = () => {
             <Button
               variant="default"
               onClick={() => {
-                window.open("https://app.catfin.in/#/login", "_blank");
+                window.open("https://app.catfin.in/#/login/partner-login", "_blank");
               }}
             >
               Partner Login
@@ -137,7 +137,7 @@ const Navbar = () => {
             <Button
               variant="default"
               onClick={() => {
-                window.open("https://app.catfin.in/#/login", "_blank");
+                window.open("https://app.catfin.in/#/login/join-us", "_blank");
               }}
             >
               Join Us
