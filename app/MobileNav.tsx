@@ -157,7 +157,7 @@ const MobileNavbar = () => {
                               Invoice Discounting
                             </Link>
                             <Link
-                              href="/home"
+                              href="/products/working-capital"
                               className="block px-4 py-2 text-sm text-gray-700 hover:bg-red-50 hover:text-red-500"
                             >
                               Working Capital
