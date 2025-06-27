@@ -24,7 +24,7 @@ const Footer = () => {
     { name: "Fixed Deposit", link: "/products/fixed-deposit" },
     { name: "Insurance & SIP'S", link: "/products/insurance-sip" },
     { name: "Invoice Discounting", link: "/products/invoice-discounting" },
-    { name: "Working Capital", link: "/home" },
+    { name: "Working Capital", link: "/products/working-capital" },
   ];
 
   // Quick links with their respective URLs
