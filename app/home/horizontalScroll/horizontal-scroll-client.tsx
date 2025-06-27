@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useIsMobile } from "@/hooks/useIsMobile";
 import { scrollItems } from "./scroll-item-data";
+import Link from "next/link";
 
 const HorizontalScrollSection = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -40,9 +41,9 @@ const HorizontalScrollSection = () => {
         const section = Math.floor(progress * 8);
         setCurrentSection(Math.min(section, 6));
       };
-  
+
       const unsubscribe = scrollYProgress.on("change", updateSection);
-  
+
       return () => unsubscribe();
     }
   }, [scrollYProgress, isMobile]);
@@ -99,6 +100,12 @@ const HorizontalScrollSection = () => {
                 >
                   {item.description}
                 </motion.p>
+
+                <Link href={item.link}>
+                  <motion.button className="absolute bottom-6 left-6 bg-red-500 hover:bg-red-600 text-white px-5 py-2.5 rounded-full font-semibold transition-colors duration-300 shadow-lg">
+                    Learn More
+                  </motion.button>
+                </Link>
               </div>
 
               <motion.button
@@ -189,6 +196,11 @@ const HorizontalScrollSection = () => {
                   >
                     {item.description}
                   </motion.p>
+                  <Link href={item.link}>
+                    <motion.button className="h-auto p-0 text-red-500 hover:text-red-600 font-medium underline-offset-4 hover:underline transition-colors">
+                      Learn More
+                    </motion.button>
+                  </Link>
                 </div>
 
                 <motion.button

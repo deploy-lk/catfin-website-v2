@@ -83,7 +83,7 @@ const Navbar = () => {
                     ["Fixed deposit", "/products/fixed-deposit"],
                     ["Insurance & SIP'S", "/products/insurance-sip"],
                     ["Invoice Discounting", "/products/invoice-discounting"],
-                    ["Working Capital", "/home"],
+                    ["Working Capital", "/products/working-capital"],
                   ].map(([label, href]) => (
                     <Link
                       key={href}
@@ -129,7 +129,10 @@ const Navbar = () => {
             <Button
               variant="default"
               onClick={() => {
-                window.open("https://app.catfin.in/#/login/partner-login", "_blank");
+                window.open(
+                  "https://app.catfin.in/#/login/partner-login",
+                  "_blank"
+                );
               }}
             >
               Partner Login
