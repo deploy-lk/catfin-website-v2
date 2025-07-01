@@ -100,29 +100,37 @@ const HorizontalScrollSection = () => {
                 >
                   {item.description}
                 </motion.p>
+              </div>
+
+              <div className="absolute bottom-6 left-6 flex space-x-3">
+                <motion.button
+                  className="bg-red-500 hover:bg-red-600 text-white px-5 py-2.5 rounded-full font-semibold transition-colors duration-300 shadow-lg"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 + 0.5 }}
+                  onClick={() => {
+                    window.open(
+                      "https://app.catfin.in/#/apply-loan/mobile",
+                      "_blank"
+                    );
+                  }}
+                >
+                  Apply Now
+                </motion.button>
 
                 <Link href={item.link}>
-                  <motion.button className="absolute bottom-6 left-6 bg-red-500 hover:bg-red-600 text-white px-5 py-2.5 rounded-full font-semibold transition-colors duration-300 shadow-lg">
+                  <motion.button
+                    className="bg-transparent hover:bg-red-50 text-red-500 px-5 py-2.5 rounded-full font-semibold transition-colors duration-300"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: index * 0.1 + 0.6 }}
+                  >
                     Learn More
                   </motion.button>
                 </Link>
               </div>
-
-              <motion.button
-                className="absolute bottom-6 left-6 bg-red-500 hover:bg-red-600 text-white px-5 py-2.5 rounded-full font-semibold transition-colors duration-300 shadow-lg"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 + 0.5 }}
-                onClick={() => {
-                  window.open(
-                    "https://app.catfin.in/#/apply-loan/mobile",
-                    "_blank"
-                  );
-                }}
-              >
-                Apply Now
-              </motion.button>
             </motion.div>
           ))}
         </div>
@@ -196,28 +204,36 @@ const HorizontalScrollSection = () => {
                   >
                     {item.description}
                   </motion.p>
+                </div>
+
+                {/* For the desktop version, replace the buttons with this */}
+                <div className="absolute bottom-6 left-6 flex">
+                  <motion.button
+                    className="bg-red-500 hover:bg-red-600 text-white px-5 py-2.5 rounded-l-full font-semibold transition-colors duration-300 shadow-lg"
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: index * 0.1 + 0.6 }}
+                    onClick={() => {
+                      window.open(
+                        "https://app.catfin.in/#/apply-loan/mobile",
+                        "_blank"
+                      );
+                    }}
+                  >
+                    Apply Now
+                  </motion.button>
+
                   <Link href={item.link}>
-                    <motion.button className="h-auto p-0 text-red-500 hover:text-red-600 font-medium underline-offset-4 hover:underline transition-colors">
+                    <motion.button
+                      className="bg-white/80 hover:bg-red-50 text-red-500 px-5 py-2.5 rounded-r-full font-semibold transition-colors duration-300 border-l-0 border-red-200"
+                      initial={{ opacity: 0, y: 30 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: index * 0.1 + 0.7 }}
+                    >
                       Learn More
                     </motion.button>
                   </Link>
                 </div>
-
-                <motion.button
-                  className="absolute bottom-6 left-6 bg-red-500 hover:bg-red-600 text-white px-5 py-2.5 rounded-full font-semibold transition-colors duration-300 shadow-lg"
-                  initial={{ opacity: 0, y: 30 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.1 + 0.6 }}
-                  onClick={() => {
-                    window.open(
-                      "https://app.catfin.in/#/apply-loan/mobile",
-                      "_blank"
-                    );
-                  }}
-                >
-                  Apply Now
-                </motion.button>
-
                 <div className="absolute bottom-6 right-6 flex space-x-2">
                   {scrollItems.map((_, dotIndex) => (
                     <div
