@@ -127,7 +127,7 @@ const HorizontalScrollSection = () => {
                     viewport={{ once: true }}
                     transition={{ delay: index * 0.1 + 0.6 }}
                   >
-                    Learn More
+                    Check eligibility
                   </motion.button>
                 </Link>
               </div>
@@ -230,7 +230,7 @@ const HorizontalScrollSection = () => {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: index * 0.1 + 0.7 }}
                     >
-                      Learn More
+                      Check eligibility
                     </motion.button>
                   </Link>
                 </div>
