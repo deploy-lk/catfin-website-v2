@@ -52,6 +52,7 @@ export default function BusinessLoanPage() {
     tenure: "12 - 84 months",
     processingFee: "1.5% of loan amount",
     heroImage: "/businessLoan.png",
+    applyLink: "https://app.catfin.in/#/apply-loan/mobile",
   };
 
   return (

@@ -52,6 +52,7 @@ export default function MutualFundsPage() {
     tenure: "Open-ended",
     processingFee: "0.5% - 2.5% expense ratio",
     heroImage: "/mutualLoan.png",
+    applyLink: "https://catfin.larkfinserv.com/login",
   };
 
   return (

@@ -52,6 +52,7 @@ export default function MortgageLoanPage() {
     tenure: "5 - 30 years",
     processingFee: "0.5% of loan amount",
     heroImage: "/mortageLoan.png",
+    applyLink: "https://app.catfin.in/#/apply-loan/mobile",
   };
 
   return (

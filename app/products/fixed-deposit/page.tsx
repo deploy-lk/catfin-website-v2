@@ -52,6 +52,7 @@ export default function FixedDepositPage() {
     tenure: "7 days - 10 years",
     processingFee: "Nil",
     heroImage: "/fixedDeposite.png",
+    applyLink: "https://app.catfin.in/#/apply-loan/mobile",
   };
 
   return (

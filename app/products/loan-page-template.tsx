@@ -33,6 +33,7 @@ interface LoanPageProps {
   tenure: string;
   processingFee: string;
   heroImage: string;
+  applyLink: string;
 }
 
 export default function LoanPageTemplate({
@@ -47,6 +48,7 @@ export default function LoanPageTemplate({
   tenure,
   processingFee,
   heroImage,
+  applyLink,
 }: LoanPageProps) {
   const containerVariants: Variants = {
     hidden: { opacity: 0 },
@@ -137,13 +139,22 @@ export default function LoanPageTemplate({
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <Button
+                {/* <Button
                   size="lg"
                   onClick={() => {
                     window.open(
                       "https://app.catfin.in/#/apply-loan/mobile",
                       "_blank"
                     );
+                  }}
+                  className="bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-200 shadow-xl hover:shadow-2xl"
+                >
+                  Apply Now
+                </Button> */}
+                <Button
+                  size="lg"
+                  onClick={() => {
+                    window.open(applyLink, "_blank");
                   }}
                   className="bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-200 shadow-xl hover:shadow-2xl"
                 >

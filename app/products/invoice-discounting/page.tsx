@@ -51,6 +51,7 @@ export default function InvoiceDiscountingPage() {
     tenure: "30 - 90 days",
     processingFee: "1% of invoice value",
     heroImage: "/invoice.png",
+    applyLink: "https://app.catfin.in/#/apply-loan/mobile",
   };
 
   return (

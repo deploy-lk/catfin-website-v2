@@ -52,6 +52,7 @@ export default function WorkingCapitalPage() {
     tenure: "12 months renewable",
     processingFee: "1% of sanctioned limit",
     heroImage: "/workingCapital.png",
+    applyLink: "https://app.catfin.in/#/apply-loan/mobile",
   };
 
   return (
