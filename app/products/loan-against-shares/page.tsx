@@ -51,6 +51,7 @@ export default function LoanAgainstSharesPage() {
     tenure: "12 - 36 months",
     processingFee: "1% of loan amount",
     heroImage: "/loanAgainstShare.png",
+    applyLink: "https://catfin.larkfinserv.com/login",
   };
 
   return (

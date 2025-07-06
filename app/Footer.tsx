@@ -270,7 +270,7 @@ const Footer = () => {
                 </a>
 
                 <a
-                  href="https://www.linkedin.com/company/catfin-in"
+                  href=" https://www.instagram.com/catfin.india/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-pink-500 hover:bg-pink-600 text-white p-3 rounded-full transition-all duration-300 transform hover:scale-110 hover:rotate-3 shadow-lg hover:shadow-xl"

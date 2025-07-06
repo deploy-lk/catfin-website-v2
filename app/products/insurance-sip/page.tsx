@@ -52,6 +52,7 @@ export default function InsuranceSIPPage() {
     tenure: "5 - 30 years",
     processingFee: "As per plan",
     heroImage: "/insurance.png",
+    applyLink: "https://app.catfin.in/#/apply-loan/mobile",
   };
 
   return (

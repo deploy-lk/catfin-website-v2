@@ -52,6 +52,7 @@ export default function AutoLoanPage() {
     tenure: "12 - 84 months",
     processingFee: "1% of loan amount",
     heroImage: "/autoLoan.png",
+    applyLink: "https://app.catfin.in/#/apply-loan/mobile",
   };
 
   return (
